@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do List</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/site.css" />
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/knockout-2.2.1.js"></script>
+	<script type="text/javascript" src="js/todoViewModel.js"></script>
+</head>
+<body>
+	<div id="superContainer">
+		<div id="todoListContainer">
+			<div id="menuBar">
+				<ul>
+					<li><a href="#" class="menubarDate" id="sortByDate" title="Sort By Date"></a></li>
+					<li><a href="#" class="menubarAdd" id="addNew" title="Add New Task"></a></li>
+				</ul>
+			</div>
+			<div id="todoListHeader">
+				<div id="headerLeftBg"></div>
+				<div id="headerMainBg"></div>
+				<div id="headerRightBg"></div>
+			</div>
+			<div id="todoListMain">
+				<div id="mainLeftBg"></div>
+				<div id="mainBodyBg">
+					<div id="todoHeader">
+						To Do List:
+					</div>
+					
+					<ul id="todoList" data-bind="foreach: todoList">
+						<li>
+							<div data-bind="text: Title" class="todoTitle"></div>
+							<div data-bind="text: Date" class="todoDate"></div>
+							<div class="clear"></div>
+						</li>
+					</ul>
+				</div>
+				<div id="mainRightBg"></div>
+			</div>
+			<div id="todoListFooter">
+				<div id="footerLeftBg"></div>
+				<div id="footerMainBg">
+					<div id="new_item_container">
+						<form name="newItem" id="newItem">
+							<input type="text" name="text_title" id="text_title" autocomplete="off" size="22" title="Title Min:3 Max:20" placeholder="Task title" pattern="^[\w\s]{3,20}$" required/> 
+							<input type="text" name="text_date" id="text_date" autocomplete="off" size="13" title="Date format MM/DD/YYYY." placeholder="MM/DD/YYYY" pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d" required/>
+							<button type="submit" id="btn_add" title="Click to add new task."></button>
+						</form>
+					</div>
+				</div>
+				<div id="footerRightBg"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

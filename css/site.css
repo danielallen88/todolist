@@ -1,0 +1,178 @@
+/*Page Generic CSS*/
+body{
+	color:#000000;
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	font-size: 80%;
+	margin:0px;
+}
+*:focus{
+	outline: none;
+}
+input[type="text"]{
+    border:1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius:3px;
+    padding:3px;
+    margin:0px;
+    font-size:80%;
+}
+button[type="submit"] {
+    background: url('../images/btn-add.png') no-repeat -10px 0px;
+    cursor:pointer;
+    width: 98px;
+    height: 51px;
+    border: none;
+    margin-left:125px;
+}
+ul{
+	list-style-type:none;
+	list-style-position:outside;
+    margin:0px;
+    padding:0px;
+}
+#superContainer{
+	background: url('../images/bg.png') no-repeat center;
+	margin:0 auto;
+	width:600px;
+	height:600px;
+}
+#new_item_container{
+	display:none;
+	width:270px;
+	position:absolute;
+	margin-top:-45px;
+	padding-left:5px;
+}
+#new_item_container input:focus{
+    background: #fff;
+    border:1px solid #555;
+    box-shadow: 0 0 3px #aaa;
+}
+#new_item_container input:required:valid{
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+#new_item_container input:focus:invalid{ 
+    background: #fff;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535;
+}
+	
+/*To Do List Generic CSS*/
+#todoListContainer{
+	padding:140px 0px 0px 165px;
+	width:300px;
+}
+#todoListContainer #todoListMain #todoList{
+	width:220px;
+}
+#todoListContainer #todoListMain #todoList li{
+	height:25px;
+	padding:18px 0px 0px 5px;
+	position:relative;
+}
+#todoListContainer #todoListMain #todoList li div{
+	height:30px;
+}
+
+/*Menubar CSS*/
+#todoListContainer #menuBar ul{
+	padding:0px 0px 0px 50px;
+	line-height:8px;
+}
+#todoListContainer #menuBar ul li{
+	display:inline;
+}
+#todoListContainer #menuBar ul li a.menubarDate{
+	background: url('../images/date-btn.png') no-repeat 0px 3px;
+	height:23px;
+	width:76px;
+	display:inline-block;
+}
+#todoListContainer #menuBar ul li a.menubarDate:hover, #todoListContainer #menuBar ul li a.menubarDate.selected{
+	background: url('../images/date-btn.png') no-repeat 0px 0px;
+}
+#todoListContainer #menuBar ul li a.menubarAdd{
+	background: url('../images/add-btn.png') no-repeat 0px 3px;
+	height:23px;
+	width:76px;
+	display:inline-block;
+}
+#todoListContainer #menuBar ul li a.menubarAdd:hover, #todoListContainer #menuBar ul li a.menubarAdd.selected{
+	background: url('../images/add-btn.png') no-repeat 0px 0px;
+}
+
+/*Header CSS*/
+#todoListContainer #todoListHeader div{
+	height:34px;
+}
+#todoListContainer #todoListHeader #headerLeftBg{
+	background: url('../images/header-left-bg.png') no-repeat;
+	width:36px;
+	float:left;
+}
+#todoListContainer #todoListHeader #headerMainBg{
+	background: url('../images/header-main-bg.png') repeat-x;
+	width:195px;
+	float:left;
+}
+#todoListContainer #todoListHeader #headerRightBg{
+	background: url('../images/header-right-bg.png') no-repeat;
+	width:39px;
+	float:left;
+}
+
+/*Main CSS*/
+#todoListContainer #todoListMain div{
+	height:197px;
+}
+#todoListContainer #todoListMain #mainLeftBg{
+	background: url('../images/main-left-bg.png') no-repeat;
+	width:36px;
+	float:left;
+}
+#todoListContainer #todoListMain #mainBodyBg{
+	background: url('../images/main-body-bg.png') repeat-x;
+	width:229px;
+	float:left;
+}
+#todoListContainer #todoListMain #mainBodyBg #todoHeader{
+	height:30px;
+	font-size:150%;
+	font-weight:bold;
+	color:#c0c0c0;
+	padding-left: 5px;
+	margin-top:-10px;
+}
+#todoListContainer #todoListMain #mainBodyBg #todoList li div.todoTitle{
+	float:left;
+	width:130px;
+}
+#todoListContainer #todoListMain #mainBodyBg #todoList li div.todoDate{
+	float:left;
+}
+#todoListContainer #todoListMain #mainRightBg{
+	background: url('../images/main-right-bg.png') no-repeat;
+	width:33px;
+	float:left;
+}
+
+/*Footer CSS*/
+#todoListContainer #todoListFooter div{
+	height:41px;
+}
+#todoListContainer #todoListFooter #footerLeftBg{
+	background: url('../images/footer-left-bg.png') no-repeat;
+	width:36px;
+	float:left;
+}
+#todoListContainer #todoListFooter #footerMainBg{
+	background: url('../images/footer-main-bg.png') repeat-x;
+	width:195px;
+	float:left;
+}
+#todoListContainer #todoListFooter #footerRightBg{
+	background: url('../images/footer-right-bg.png') no-repeat;
+	width:39px;
+	float:left;
+}
